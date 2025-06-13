@@ -4,10 +4,10 @@ import time
 from os import environ
 
 # Shortlink API configuration
-API = environ.get("API", "d92f120bd61ee18e32d4a5e4f4cfad8d747eeec4") # shortlink api
+API = environ.get("API", "nJ0xMvXlLEhpVcJK2MjvU6Vxx6u2") # shortlink api
 URL = environ.get("URL", "shareus.io") # shortlink domain without https://
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "") # how to open link 
-BOT_USERNAME = environ.get("BOT_USERNAME", "AniflixAutoFilterBot") # bot username without @
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "t.me/kingcey") # how to open link 
+BOT_USERNAME = environ.get("BOT_USERNAME", "File_renamer_GoBot") # bot username without @
 VERIFY = environ.get("VERIFY", "True") == "True"  # Convert string to boolean
 
 id_pattern = re.compile(r'^.\d+$')
@@ -31,7 +31,7 @@ class Config(object):
     BOT_UPTIME = time.time()
     START_PIC = os.environ.get("START_PIC", "https://graph.org/file/9c910cbc74144b3b2efce.jpg")
     ADMIN = [int(admin) if id_pattern.search(
-        admin) else admin for admin in os.environ.get('ADMIN', '1740287480').split()]  # ⚠️ Required
+        admin) else admin for admin in os.environ.get('ADMIN', '7428552084').split()]  # ⚠️ Required
     
     FORCE_SUB = os.environ.get("FORCE_SUB", "animloko") # ⚠️ Required Username without @
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002219568827"))  # ⚠️ Required
