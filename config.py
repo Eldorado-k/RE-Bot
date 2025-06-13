@@ -5,7 +5,7 @@ from os import environ
 
 # Shortlink API configuration
 API = environ.get("API", "d92f120bd61ee18e32d4a5e4f4cfad8d747eeec4") # shortlink api
-URL = environ.get("URL", "publicearn.com") # shortlink domain without https://
+URL = environ.get("URL", "shareus.io") # shortlink domain without https://
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "") # how to open link 
 BOT_USERNAME = environ.get("BOT_USERNAME", "AniflixAutoFilterBot") # bot username without @
 VERIFY = environ.get("VERIFY", "True") == "True"  # Convert string to boolean
@@ -14,8 +14,8 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID = os.environ.get("API_ID", "25198711")  # ⚠️ Required
-    API_HASH = os.environ.get("API_HASH", "2a99a1375e26295626c04b4606f72752")  # ⚠️ Required
+    API_ID = os.environ.get("API_ID", "24817837")  # ⚠️ Required
+    API_HASH = os.environ.get("API_HASH", "acd9f0cc6beb08ce59383cf250052686")  # ⚠️ Required
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "8183564006:AAERzS5GwWM56pJAQqclwVd8W-HFgXqCBPA")  # ⚠️ Required
 
     # premium 4g renaming client
@@ -33,7 +33,7 @@ class Config(object):
     ADMIN = [int(admin) if id_pattern.search(
         admin) else admin for admin in os.environ.get('ADMIN', '1740287480').split()]  # ⚠️ Required
     
-    FORCE_SUB = os.environ.get("FORCE_SUB", "aniflixClou") # ⚠️ Required Username without @
+    FORCE_SUB = os.environ.get("FORCE_SUB", "animloko") # ⚠️ Required Username without @
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002219568827"))  # ⚠️ Required
     FLOOD = int(os.environ.get("FLOOD", '105'))
     BANNED_USERS = set(int(x) for x in os.environ.get(
